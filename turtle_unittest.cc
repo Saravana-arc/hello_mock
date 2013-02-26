@@ -7,5 +7,7 @@ using ::testing::AtLeast;
 TEST(TurtleTest, CallPenDown) {
   MockTurtle turtle;                         
   EXPECT_CALL(turtle, PenDown())             
-      .Times(AtLeast(1));
+    .Times(AtLeast(1));
+
+  turtle.PenDown();
 }                                             
